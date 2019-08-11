@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+<!-- 
+	Use a XSD name space you need inside the beans tag above
+	you can select the one from the "namespaces" tap on the left bottom of this xml file 
+-->
+
+
+
+
+	<!-- this allows you to reference external files(values) without having to use environment -->
+	<context:property-placeholder location = "classpath:admin.properties, classpath:sub_admin.properties"/>
+	
+	<bean id="adminConnection" class="com.javalec.xml_ps.AdminConnection">
+		
+		<!-- we use setters -->
+		<property name="adminId">
+			<value>${admin.id}</value>	<!-- we don't assign a value directly but reference (format) the value from admin.properties -->
+		</property>
+		<property name="adminPw">
+			<value>${admin.pw}</value>
+		</property>
+		<property name="subAdminId">	<!-- we don't assign a value directly but reference (format) the value from sub_admin.properties -->
+			<value>${sub_admin.id}</value>
+		</property>
+		<property name="subAdminPw">
+			<value>${sub_admin.pw}</value>
+		</property>
+	</bean>
+	
+
+</beans>

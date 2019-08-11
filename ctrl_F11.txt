@@ -1,0 +1,14 @@
+INFO : org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [applicationCTX.xml]
+INFO : org.springframework.context.support.GenericXmlApplicationContext - Refreshing org.springframework.context.support.GenericXmlApplicationContext@2957fcb0: startup date [Sun Aug 11 21:57:32 BST 2019]; root of context hierarchy
+INFO : org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [admin.properties]
+INFO : org.springframework.context.support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [sub_admin.properties]
+INFO : org.springframework.beans.factory.support.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3c756e4d: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,adminConnection]; root of factory hierarchy
+afterPropertiesSet()
+admin ID: admin
+admin PASSWORD: 12345
+
+sub admin ID: sub_admin
+sub admin PASSWORD: 67890
+INFO : org.springframework.context.support.GenericXmlApplicationContext - Closing org.springframework.context.support.GenericXmlApplicationContext@2957fcb0: startup date [Sun Aug 11 21:57:32 BST 2019]; root of context hierarchy
+INFO : org.springframework.beans.factory.support.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3c756e4d: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,adminConnection]; root of factory hierarchy
+destroy()
